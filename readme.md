@@ -28,7 +28,6 @@ docker exec -it www_docker_symfony  bin/console  lexik:jwt:generate-keypair
 
 ```
 docker exec -it www_docker_symfony  bin/console  doctrine:database:create
-docker exec -it www_docker_symfony  bin/console  make:migration
 docker exec -it www_docker_symfony  bin/console doctrine:migrations:migrate
 ```
 
@@ -36,10 +35,6 @@ docker exec -it www_docker_symfony  bin/console doctrine:migrations:migrate
 
 ```
 docker exec -it www_docker_symfony  bin/console  cache:clear
-```
-
-```
-docker exec -it www_docker_symfony symfony 
 ```
 
 ## Run the test
